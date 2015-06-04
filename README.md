@@ -1,2 +1,2 @@
 # js-content-slider
-Javascript Content Slider
+JQuery Content Slider
