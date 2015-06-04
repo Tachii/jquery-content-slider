@@ -17,7 +17,7 @@ $(document).ready(function(){
 	$('.active').show();
 	
 	//Navigation buttons
-	$('#index').on('click', function(){
+	$('#next').on('click', function(){
 		alert('test');
 	});
 });
