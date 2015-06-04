@@ -16,7 +16,7 @@ $(document).ready(function(){
 	//Show First Slide
 	$('.active').show();
 	
-	//Navigation buttons
+	//Navigation forward
 	$('#next').on('click', function(){
 		$('.active').removeClass('active').addClass('oldActive');
 		
@@ -31,4 +31,21 @@ $(document).ready(function(){
 		$('.active').fadeIn(speed);
 		
 	});
+	
+	//Navigation reverse
+	$('#prev').on('click', function(){
+		$('.active').removeClass('active').addClass('oldActive');
+		
+		if($('.oldActive').is(':first-child')){
+			$('.slide').last().addClass('active'); 
+		} else {
+			$('.oldActive').prev().addClass('active');
+		}
+		
+		$('.oldActive').removeClass('oldActive');
+		$('.slide').fadeOut(speed);
+		$('.active').fadeIn(speed);
+		
+	});
+	
 });
