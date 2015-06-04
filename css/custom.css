@@ -52,8 +52,11 @@ h1{
 }
 
 #prev{
-	
+	margin-right: -45px;
 }
 
+#next{
+	margin-left: -45px;
+}
 
 
