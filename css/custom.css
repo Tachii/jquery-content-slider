@@ -38,6 +38,19 @@ h1{
 	border-radius:5px;
 }
 
+.slide{
+	position: absolute;
+}
+
+.slide-copy{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding:20px;
+	background: 7f7f7f;
+	background: rgba(0,0,0,0.5);
+}
+
 #slider img{
 	width:940px;
 	height: 350px;
