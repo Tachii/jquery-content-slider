@@ -29,7 +29,6 @@ $(document).ready(function(){
 		$('.oldActive').removeClass('oldActive');
 		$('.slide').fadeOut(speed);
 		$('.active').fadeIn(speed);
-		
 	});
 	
 	//Navigation reverse
@@ -47,5 +46,22 @@ $(document).ready(function(){
 		$('.active').fadeIn(speed);
 		
 	});
+	
+	//Autoswith
+	if(autoswitch){
+		setInterval(function(){
+			$('.active').removeClass('active').addClass('oldActive');
+			
+			if($('.oldActive').is(':last-child')){
+				$('.slide').first().addClass('active'); 
+			} else {
+				$('.oldActive').next().addClass('active');
+			}
+			
+			$('.oldActive').removeClass('oldActive');
+			$('.slide').fadeOut(speed);
+			$('.active').fadeIn(speed);
+		},autoswitch_speed);
+	}
 	
 });
