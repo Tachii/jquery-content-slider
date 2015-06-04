@@ -2,7 +2,6 @@
  * @author Gleb Zaveruha
  */
 $(document).ready(function(){
-	alert('test');
 	//Options
 	var speed = 500; 				//Fade speed
 	var autoswitch = true; 			//Autoslider option
@@ -14,5 +13,11 @@ $(document).ready(function(){
 	//Hide All Slides
 	$('.slide').hide();
 	
-	alert('test');
+	//Show First Slide
+	$('.active').show();
+	
+	//Navigation buttons
+	$('#index').on('click', function(){
+		alert('test');
+	});
 });
