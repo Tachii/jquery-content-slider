@@ -37,3 +37,23 @@ h1{
 	border:#666 solid 2px;
 	border-radius:5px;
 }
+
+#slider img{
+	width:940px;
+	height: 350px;
+}
+
+#prev, #next{
+	float:left;
+	margin-top:130px;
+	cursor: pointer;
+	position:relative;
+	z-index: 100;
+}
+
+#prev{
+	
+}
+
+
+
